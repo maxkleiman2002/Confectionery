@@ -19,6 +19,9 @@ ul{
     padding-left:0;
     background-color:#DEB887;
 }
+a:hover{
+    text-decoration: underline;
+}
 header a{
     text-decoration: none;
     color:#4E461B;

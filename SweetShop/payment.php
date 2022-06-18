@@ -1,24 +1,18 @@
 <?php
-    ini_set('display_errors', 'Off');
-    session_start();
-    require_once 'vendor/signin.php';
-    if($_SESSION['user']){
-        header("Location: profile/profile_main.php");
-    }
-
-
+ini_set('display_errors', 'Off');
+require_once 'vendor/signin.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
-  <meta charset="utf-8">
-  <title>Авторизація</title>
-  <link rel="stylesheet" href="authorizationn.css">
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="payment.css">
 </head>
 <body>
-
 <header>
     <div class="logo">
         <div class="elips_logo">
@@ -67,41 +61,19 @@
 </header>
 
 <div class="main">
-
-  <form action="vendor/signin.php" method="post">
-    <div class="form-wrapper">
-      <h1>Вхід</h1>
-    <div class="group">
-      <input type="email" placeholder="E-mail" name="email" id="email"/>
+    <div class="text">
+    <h1>Способи оплати</h1>
+    <br>
+    <p>Готівковий розрахунок</p>
+        <p>Visa/Mastercard</p>
+        <p>Безготівковий для юридичних осіб</p>
+        <p>Банківський кредит</p>
+        <p>Portmone.com</p>
     </div>
-
-    <div class="group">
-      <input type="password" placeholder="Password" name="password" id="password"/>
+    <div class="text-img">
+        <p><img src="712742.png" alt="pay" /> </p>
     </div>
-    <button class="auth" type="submit">Вхід</button>
-    <button class="registration"><a href="registration.php">Зареєструватись</a></button>
-
-    </div>
-      <?php
-      //if ($_SESSION['message3']) {
-      //global $message3;
-      if ($_SESSION['message3']) {
-          echo '<p class="err-msg3" style="border: 2px solid #E27E1B;
-    border-radius: 3px;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    margin-top: 100px;
-    color:#fff;
-    letter-spacing: .5px;
-    margin-left: 35%;
-    width: 500px;"> ' . $_SESSION['message3'] . ' </p>';
-      }
-      unset($_SESSION['message3']);
-      ?>
-  </form>
 </div>
-
 <footer>
 
     <div class="logo-wrapper">
@@ -146,8 +118,6 @@
     </div>
 
 </footer>
-</body>
-</html>
 
 </body>
 </html>

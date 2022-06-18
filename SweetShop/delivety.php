@@ -2,23 +2,16 @@
     ini_set('display_errors', 'Off');
     session_start();
     require_once 'vendor/signin.php';
-    if($_SESSION['user']){
-        header("Location: profile/profile_main.php");
-    }
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
-  <meta charset="utf-8">
-  <title>Авторизація</title>
-  <link rel="stylesheet" href="authorizationn.css">
+    <meta charset="UTF-8">
+    <title>Доставка</title>
+    <link rel="stylesheet" href="delivery.css">
 </head>
 <body>
-
 <header>
     <div class="logo">
         <div class="elips_logo">
@@ -65,42 +58,33 @@
         </ul>
     </nav>
 </header>
-
 <div class="main">
 
-  <form action="vendor/signin.php" method="post">
-    <div class="form-wrapper">
-      <h1>Вхід</h1>
-    <div class="group">
-      <input type="email" placeholder="E-mail" name="email" id="email"/>
-    </div>
+<div class="text">
+    <span class="det"><p>Доставка</p></span>
+        <br>
+     <p>
+        Ми доставляємо: <br><br>
+        - в магазини партнерів Computer Flagman - найкращий<br>
+        швидкий та вигідний спосіб ;<br>
+        - кур'єрська доставка Чернівцями - можлива у <br>
+        день замовлення;<br>
+        - у відділення “Нова Пошта” - на протязі 2-5 днів<br>
+        кур'єрською доставкой по Україні - у будь-який населений пункт ;<br><br>
 
-    <div class="group">
-      <input type="password" placeholder="Password" name="password" id="password"/>
-    </div>
-    <button class="auth" type="submit">Вхід</button>
-    <button class="registration"><a href="registration.php">Зареєструватись</a></button>
+        Вартість та спосіб доставки вказаний на сторінці товару та при замовленні.
 
-    </div>
-      <?php
-      //if ($_SESSION['message3']) {
-      //global $message3;
-      if ($_SESSION['message3']) {
-          echo '<p class="err-msg3" style="border: 2px solid #E27E1B;
-    border-radius: 3px;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    margin-top: 100px;
-    color:#fff;
-    letter-spacing: .5px;
-    margin-left: 35%;
-    width: 500px;"> ' . $_SESSION['message3'] . ' </p>';
-      }
-      unset($_SESSION['message3']);
-      ?>
-  </form>
+    </p>
+
+
 </div>
+
+<div class="im">
+    <p><img src="img.png" alt="car"></p>
+</div>
+
+
+
 
 <footer>
 
@@ -146,8 +130,6 @@
     </div>
 
 </footer>
-</body>
-</html>
 
 </body>
 </html>

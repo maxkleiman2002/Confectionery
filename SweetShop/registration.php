@@ -15,7 +15,7 @@ if($_SESSION['user']){
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta charset="utf-8">
     <title>Форма реєстрації</title>
-    <link rel="stylesheet" href="registration1.css">
+    <link rel="stylesheet" href="regisstraionn.css">
 </head>
 <body>
 

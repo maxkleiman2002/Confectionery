@@ -12,7 +12,7 @@ session_start();
     <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Каталог</title>
-    <link rel="stylesheet" href="catalog.css">
+    <link rel="stylesheet" href="catalogg.css">
 </head>
 <body>
 <header>
