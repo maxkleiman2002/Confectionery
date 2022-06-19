@@ -65,10 +65,10 @@ session_start();
 <div class="main">
     <div class=".nav2">
         <ul class="f2">
-            <li><a href="category/bakery.php">Круасани та випічка</a> </li>
-            <li><a href="category/desert.php">Десерти</a> </li>
-            <li><a href="category/cake.php"> Торти</a></li>
-            <li><a href="category/otherSweet.php">Інші солодощі та напої</a> </li>
+            <li><a href="bakery.php">Круасани та випічка</a> </li>
+            <li><a href="desert.php">Десерти</a> </li>
+            <li><a href="cake.php"> Торти</a></li>
+            <li><a href="otherSweet.php">Інші солодощі та напої</a> </li>
         </ul>
     </div>
     <div class="im">

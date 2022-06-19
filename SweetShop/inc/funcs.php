@@ -14,14 +14,14 @@ function debug(array  $data):void
 function get_products(): array
 {
     global $pdo;
-    $res = $pdo->query("SELECT * FROM compshop.products");
+    $res = $pdo->query("SELECT * FROM confectionery.products");
    return $res->fetchAll();
 
 }
 function get_orders(): array
 {
     global $pdo;
-    $res = $pdo->query("SELECT * FROM compshop.orders");
+    $res = $pdo->query("SELECT * FROM confectionery.orders");
     return $res->fetchAll();
 
 }
@@ -36,21 +36,21 @@ function get_orders(): array
 function get_orders_detail(): array
 {
     global $pdo;
-    $res = $pdo->query("SELECT * FROM compshop.ordersdetail");
+    $res = $pdo->query("SELECT * FROM confectionery.ordersdetail");
     return $res->fetchAll();
 
 }
 function get_cart_order(): array
 {
     global $pdo;
-    $res = $pdo->query("SELECT * FROM compshop.cart");
+    $res = $pdo->query("SELECT * FROM confectionery.cart");
     return $res->fetchAll();
 
 }
 function delete_product($id)
 {
     global $pdo;
-    $pdo->query("DELETE FROM compshop.products WHERE id = $id");
+    $pdo->query("DELETE FROM confectionery.products WHERE id = $id");
 
 }
 
@@ -60,7 +60,7 @@ function get_product(int $id): array|false
     global $pdo;
 
 
-        $stmt = $pdo->query("SELECT * FROM compshop.products WHERE id = $id");
+        $stmt = $pdo->query("SELECT * FROM confectionery.products WHERE id = $id");
         return $stmt->fetch();
 
 }

@@ -9,6 +9,9 @@ body{
     font-family: "Lucida Sans Unicode";
     font-size:22px;
     background-color: #FFEBCD;
+    overflow-x: hidden;
+
+
 }
 
 ul{
@@ -108,12 +111,176 @@ nav p {
     font-weight: bold;
 
 }
-.clear{
-    clear:both;
+.main{
+    position: relative;
+    top:50px;
+}
+.modal-footer{
+
 }
 
 
 
+.main{
+    clear: both;
+}
+.qty-count{
+    opacity: 0;
+}
+table{
+    width: 650px;
+    position: relative;
+    left:15%;
+
+}
+tr{
+    box-shadow: 0 2px 16px rgba(0,0,0,.24);
+    padding-top: 20px;
+}
+td a{
+    color: black;
+    text-decoration: none;
+}
+td{
+    position: relative;
+    padding: 20px;
+
+}
+td a img{
+    width: 150px;
+    height: 150px;
+}
+.td-title{
+    width: 200px;
+}
+
+.modal-footer{
+    position: relative;
+    left: 250px;
+}
+.btn-primary{
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:#4E461B;
+    color:#fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .5px;
+
+    position: relative;
+    right: 160px;
+    top:80px;
+}
+.btn-primary:active{
+    background-color: #4f2c04;
+}
+.main button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+th{
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#929295;
+    font-weight: lighter;
+
+}
+.btn-danger{
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #DEB887;
+    box-shadow: 0 2px 16px rgba(0,0,0,.24);
+    color:#fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .5px;
+    position: relative;
+
+
+    right: 140px;
+    top:90px;
+}
+.btn-danger:active{
+    background-color: #4E461B;
+}
+.confirm-order{
+    width: 500px;
+    height: 430px;
+    position: relative;
+    left: 237px;
+    top:100px;
+    background-color: #FFEBCD;
+    border-left: 6px solid #4E461B;
+}
+
+.confirm-order p{
+    margin-left: 100px;
+    margin-top: 30px;
+
+
+}
+.no-cart{
+    position: relative;
+    right: 850px;
+}
+.no-cart p{
+    font-size: 36px;
+}
+.no-cart img{
+    width: 350px;
+    height: 350px;
+
+}
+.cart-modal,.confirm-order{
+    float:left;
+}
+.cart-modal{
+    position: relative;
+    left:140px;
+    top:100px;
+}
+.order-price,.order-sum,.big{
+    font-weight: bold;
+    position: relative;
+
+}
+.order-price{
+    position: relative;
+    left:50px;
+}
+.order-sum{
+    position: relative;
+    left:120px;
+}
+.big{
+    position: relative;
+    left:150px;
+}
+head hr{
+    width: 350px;
+    position: relative;
+    left:100px;
+    top:15px;
+    background-color:#4E461B;
+}
+.t3{
+    position: relative;
+    top: 30px;
+}
+.big2{
+    font-weight: bold;
+}
+.small{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#929295;
+    font-weight: lighter;
+}
 footer{
     position: relative;
     top:300px;
@@ -211,7 +378,6 @@ footer{
 .contacts img{
     width: 40px;
     height: 40px;
-
 
     position: relative;
     top:10px;
