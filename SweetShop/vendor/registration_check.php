@@ -30,7 +30,7 @@ session_start();
             }
             mysqli_set_charset($con, 'utf-8');
 
-            mysqli_select_db($con, "compshop");
+            mysqli_select_db($con, "confectionery");
             $email = mysqli_real_escape_string($con,$_POST['email']);
             $form = mysqli_query($con, "SELECT id FROM users WHERE name='".$email."'");
             $formIDnum=mysqli_num_rows($form);
@@ -74,7 +74,7 @@ session_start();
                 $post = mysqli_real_escape_string($con,$_POST['post']);
                 $password = mysqli_real_escape_string($con, $_POST['password']);
                 $password = md5($password);
-                mysqli_select_db($con, "compshop");
+                mysqli_select_db($con, "confectionery");
                 mysqli_query($con, "INSERT users (name, surname, patronymic, dayOfBirth, monthOfBirth, yearOfBirth, number, city, post, email, password) VALUES ('" . $name . "', '" . $surname . "','" . $patronymic . "', '" . $birth_day . "','" . $birth_month . "','" . $birth_year . "','" . $phone . "','" . $city . "','" . $post . "','" . $email . "','" . $password . "')");
                 mysqli_free_result($form);
                 mysqli_close($con);

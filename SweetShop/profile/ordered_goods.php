@@ -30,41 +30,52 @@ $result = mysqli_query($con,"SELECT * FROM orders WHERE email = '$email'");
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <meta charset="utf-8">
     <title>Авторизація</title>
-    <link rel="stylesheet" href="profile_goods2.css">
+    <link rel="stylesheet" href="ordered_goods.css">
 </head>
 <body>
 
 <header>
     <div class="logo">
         <div class="elips_logo">
-            <p>CF</p>
+            <img src="../icons/confection_logo.png" alt="logo"/>
         </div>
         <div class="logo-text">
+
             <p>
-                Computer<br>
-                Flagman
+                Sweet<br>
+                Masterpiece
             </p>
         </div>
     </div>
 
     <nav>
         <ul class="f1">
-            <li><a href="../main_screen.php">Головна</a></li>
+            <li><a href="../main_page.php">Головна</a></li>
             <li><a href="../delivety.php">Доставка</a></li>
             <li><a href="../payment.php">Оплата</a></li>
+            <!--<li><a href="about_shop.php">Про магазин</a></li> -->
+
             <li><a href="../contacts.php">Контакти</a></li>
-            <li><a href="../vendor/logout.php"><button class="auth_but">Вихід</button></a></li>
+            <?php
+            if($_SESSION['user']) {
 
-            <li class="icon_profile">
-                <a href="profile_main.php"><img src="../icons/user.png" alt="user" ></a>
-            </li>
+                echo ' <li ><a href = "../vendor/logout.php" ><button class="auth_but" > Вихід</button ></a ></li >';
+
+                echo '<li class="icon_profile">
+                <a href="profile_main.php"><img src="../icons/user.png" alt="user"></a>
+            </li>';
+
+            }
+            else{
+                echo ' <li ><a href = "../authorization.php" ><button class="auth_but" > Вхід</button ></a ></li >';
+
+            }
+            ?>
             <li><a href="../cart/cart_page.php" id="#get-cart"><img src="../cart.svg"></a></li>
-
 
             <li><div class="count-cart">
                     <span class="mini-count"> <?=$_SESSION['cart.qty'] ?? 0 ?></span>
                 </div>
-
             </li>
         </ul>
     </nav>
@@ -125,18 +136,18 @@ $result = mysqli_query($con,"SELECT * FROM orders WHERE email = '$email'");
 
     <div class="logo-wrapper">
         <div class="footer-logo">
-            <span>CF</span>
+            <img src="../icons/confection_logo.png" alt="logo"/>
         </div>
         <div class="footer-logo-text">
-            <p>Computer Flagman</p>
+            <p>Sweet Masterpiece</p>
         </div>
     </div>
 
     <div class="about-shop">
-        <p> <span>COMPUTER FLAGMAN</span></p>
+        <p> <span>SWEET MASTERPIECE</span></p>
         <a href="../about_shop.php"> <p>Про компанію</p></a>
         <a href=""> <p>Стати партнером</p></a>
-        <a href=""><p>Робота у Computer Flagman</p></a>
+        <a href=""><p>Робота у Sweet Masterpiece</p></a>
         <a href=""> <p>Правова інформація</p></a>
     </div>
     <div class="info-for-seller">
@@ -149,8 +160,8 @@ $result = mysqli_query($con,"SELECT * FROM orders WHERE email = '$email'");
     <div class="contacts">
         <p>
             <span>Контактні данні: </span><br>
-            <img src="../icons/phone.png" alt="phone" /> <span class="icon">+38 068 190 2723</span><br>
-            <img src="../icons/message_icon.png" alt="email" /> <span class="icon">maxkleiman2002@gmail.com</span>
+            <img src="../icons/phone1.png" alt="phone" /> <span class="icon">+38 066 742 2513</span><br>
+            <img src="../icons/email.png" alt="email" /> <span class="icon">grenyk.s@gmail.com</span>
         </p>
         <br/>
         <p>
@@ -160,11 +171,10 @@ $result = mysqli_query($con,"SELECT * FROM orders WHERE email = '$email'");
         <br/>
         <p>
             <span>Адреса:</span><br>
-            м.Чернівці, вул. Героїв Майдану, 69
+            м.Чернівці, вул. Героїв Майдану, 159
         </p>
     </div>
 
 </footer>
-
 </body>
 </html>

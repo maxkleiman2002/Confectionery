@@ -5,42 +5,68 @@
 html,body{
     height: 100%;
 }
-
-.logo-text{
-
-    float:left;
-    margin-left: 35px;
-
-}
-.logo-text p{
-    font-weight: bold;
-
-}
 body{
     font-family: "Lucida Sans Unicode";
-    font-size:24px;
+    font-size:22px;
+    background-color: #FFEBCD;
 }
 
-header ul{
+ul{
     list-style: none;
     margin: 0;
     padding-left:0;
 }
 header a{
     text-decoration: none;
-    color:black;
+    color:#4E461B;
+    font-size: 18px;
 
+}
+a:hover{
+    text-decoration: underline;
+}
+.count-cart{
+    position: relative;
+    right: 100px;
+    bottom: 7px;
+    width: 35px;
+    height: 35px;
+    background-color:#4E461B;
+    border-radius: 50%;
+    color: #FFEBCD;
+    font-weight: bold;
 
 }
 
-header a:hover{
-    color:#246FB5;
+.mini-count{
+    position: relative;
+    left:11px;
+
 }
-header nav img{
+button.auth_but{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:#4E461B;
+    color:#FFEBCD;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: .5px;
+    position: relative;
+    bottom: 5px;
+}
+button:active{
+    background-color:#DEB887 ;
+    color:#4E461B;
+}
+
+
+nav img{
     width:48px;
     height: 35px;
 }
-header nav p {
+nav p {
     margin-top: -6px;
     position: relative;
 }
@@ -54,7 +80,7 @@ header nav p {
     border-radius: 15%;
     width:88px;
     height: 70px;
-    background-color:#246FB5;
+
     padding-left:10px;
     padding-top:1px;
     position: relative;
@@ -73,19 +99,17 @@ header nav p {
 
 }
 .logo-text{
-    display: inline-block;
+    float:left;
     margin-left: 35px;
-    position: relative;
-    top:20px;
+    margin-top: 20px;
 
 }
 .logo-text p{
     font-weight: bold;
 
 }
-
-
 .main{
+
     clear: both;
 }
 .sidebar ul li a{
@@ -143,184 +167,6 @@ header nav p {
     left:200px;
     width: 350px;
 }
-
-
-.sidebar ul li{
-    background-color: #4381B4 ;
-    margin-top: 15px;
-    width: 400px ;
-    height: 80px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin-left: 5%;
-    list-style-type: none;
-    padding-left: 15px;
-}
-
-.sidebar ul li a:active{
-    color: #a8bac7;
-}
-.sidebar,.content{
-    float: left;
-}
-
-.content{
-    width: 730px;
-    position: relative;
-    top:80px;
-}
-.content h1{
-    position: relative;
-    left:350px;
-    top:75px;
-}
-
-button.auth_but{
-    width: 100px;
-    height: 50px;
-    border-radius: 25px;
-    background-color:#246FB5;
-    color:#fff;
-    border: none;
-    outline: none;
-    font-size: 18px;
-    letter-spacing: .5px;
-    position: relative;
-    bottom: 5px;
-}
-button:active{
-    background-color: #14365D;
-}
-
-
-
-p.err-msg3{
-    border: 2px solid #E27E1B;
-    border-radius: 3px;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    margin-top: 100px;
-    color:#fff;
-    letter-spacing: .5px;
-    margin-left: 35%;
-    width: 500px;
-}
-.count-cart{
-    position: relative;
-    right: 100px;
-    bottom: 7px;
-    width: 35px;
-    height: 35px;
-    background-color:#246FB5;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: bold;
-
-}
-
-.mini-count{
-    position: relative;
-    left:11px;
-
-}
-footer{
-    top:470px;
-    position: relative;
-    background-color: #20314F;
-    height: 400px;
-    clear: both;
-}
-.footer-logo{
-    border-radius: 15%;
-    width:88px;
-    height: 70px;
-    background-color:#fff;
-    color: #20314F;
-    font-weight: bold;
-    font-size: 30px;
-    padding-left:10px;
-    padding-top:1px;
-}
-.footer-logo-text{
-    color: #fff;
-    font-size: 20px;
-    font-weight: bolder;
-    padding-left: 20px;
-    position: relative;
-    top:10px;
-}
-.footer-logo,.footer-logo-text{
-    display: inline-block;
-}
-.footer-logo span{
-    padding-left: 26%;
-    position: relative;
-    top:10px;
-}
-.logo-wrapper{
-    margin-left: 235px;
-    padding-top: 50px;
-}
-.logo-wrapper,.about-shop,.info-for-seller,.contacts{
-    float: left;
-}
-.about-shop{
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    left:100px;
-    top: 78px;
-}
-.about-shop a{
-    color: #fff;
-    text-decoration: none;
-}
-.about-shop a:hover{
-    color: #fff;
-    text-decoration: underline;
-}
-.about-shop span{
-    font-weight: bold;
-    letter-spacing: 1px;
-
-}
-.info-for-seller{
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    left:200px;
-    top: 78px;
-}
-.info-for-seller a{
-    color: #fff;
-    text-decoration: none;
-}
-.info-for-seller a:hover{
-    color: #fff;
-    text-decoration: underline;
-}
-.info-for-seller span{
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-.contacts{
-    font-size: 16px;
-    color: #fff;
-    position: relative;
-    left:300px;
-    top: 78px;
-}
-.contacts span{
-    font-weight: bolder;
-    letter-spacing: .5px;
-}
-/*.icon_profile img{*/
-/*    width: 40px;*/
-/*    height: 40px;*/
-/*    position: relative;*/
-/*    right: 150px;*/
-/*}*/
 table{
     border-collapse: collapse;
     border: 2px solid black;
@@ -341,18 +187,151 @@ th{
     border: 2px solid black;
     padding: 10px;
     text-align: center;
-    background-color: #14365D;
+    background-color: #4f4620;
     color: #fff;
+}
+
+.sidebar ul li{
+    background-color: #4E461B ;
+    margin-top: 15px;
+    width: 400px ;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 5%;
+    list-style-type: none;
+    padding-left: 15px;
+    box-shadow: 2px 2px 3px #999;
+    -webkit-box-shadow: 2px 2px 3px #999;
+    -moz-box-shadow: 2px 2px 3px #999;
+}
+
+.sidebar ul li a:active{
+    color: #a8bac7;
+}
+.sidebar,.content{
+    float: left;
+}
+
+.content{
+    width: 730px;
+    position: relative;
+    top:80px;
+}
+.content h1{
+    position: relative;
+    left:350px;
+    top:75px;
+}
+
+
+
+
+
+
+footer{
+    position: relative;
+    top:450px;
+    background-color: #DEB887;
+    height: 400px;
+    clear: both;
+
+}
+.footer-logo{
+    border-radius: 15%;
+    width:88px;
+    height: 70px;
+
+
+
+    font-weight: bold;
+    font-size: 30px;
+    padding-left:10px;
+    padding-top:1px;
+}
+.footer-logo-text{
+    color: #4E461B;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 20px;
+    position: relative;
+    right: 20px;
+    bottom: 15px;
+}
+.footer-logo,.footer-logo-text{
+    display: inline-block;
+}
+.footer-logo span{
+    padding-left: 26%;
+    position: relative;
+    top:10px;
+}
+.logo-wrapper{
+    margin-left: 235px;
+    padding-top: 50px;
+}
+.logo-wrapper,.about-shop,.info-for-seller,.contacts{
+    float: left;
+}
+.about-shop{
+    font-size: 16px;
+    color: #4E461B;
+    position: relative;
+    left:100px;
+    top: 78px;
+}
+.about-shop a{
+    color: #4E461B;
+    text-decoration: none;
+}
+.about-shop a:hover{
+    color: #FFEBCD;
+    text-decoration: underline;
+}
+.about-shop span{
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+.info-for-seller{
+    font-size: 16px;
+    color: #4E461B;
+    position: relative;
+    left:200px;
+    top: 78px;
+}
+.info-for-seller a{
+    color: #4E461B;
+    text-decoration: none;
+}
+.info-for-seller a:hover{
+    color: #FFEBCD;
+    text-decoration: underline;
+}
+.info-for-seller span{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.contacts{
+    font-size: 16px;
+    color: #4E461B;
+    position: relative;
+    left:300px;
+    top: 78px;
+}
+.contacts span{
+    font-weight: bolder;
+    letter-spacing: .5px;
 }
 .contacts img{
     width: 40px;
     height: 40px;
-    filter: invert(100%);
-    -webkit-filter:invert(100%);
+
+
     position: relative;
     top:10px;
 }
-.contacts .icon {
+.contacts .icon{
     position: relative;
     margin-left: 10px;
 }

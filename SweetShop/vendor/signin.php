@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             . mysqli_connect_error());
     }
     mysqli_set_charset($con, 'utf-8');
-    mysqli_select_db($con, "compshop");
+    mysqli_select_db($con, "confectionery");
 
     $email = mysqli_real_escape_string($con,$_POST['email']);
     $password = md5(mysqli_real_escape_string($con, $_POST['password']));

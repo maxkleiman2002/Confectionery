@@ -1,24 +1,22 @@
 <?php
 ini_set('display_errors', 'Off');
-require_once 'vendor/signin.php';
-session_start();
+require_once '../vendor/signin.php';
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name = "viewport" content="width=device-width, initial-scale = 1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>Каталог</title>
-    <link rel="stylesheet" href="catalogg.css">
+    <title>Оплата</title>
+    <link rel="stylesheet" href="category.css">
 </head>
 <body>
 <header>
     <div class="logo">
         <div class="elips_logo">
-            <img src="icons/confection_logo.png" alt="logo"/>
+            <img src="../icons/confection_logo.png" alt="logo"/>
         </div>
         <div class="logo-text">
 
@@ -31,28 +29,28 @@ session_start();
 
     <nav>
         <ul class="f1">
-            <li><a href="main_screen.php">Головна</a></li>
-            <li><a href="delivety.php">Доставка</a></li>
-            <li><a href="payment.php">Оплата</a></li>
+            <li><a href="../main_page.php">Головна</a></li>
+            <li><a href="../delivety.php">Доставка</a></li>
+            <li><a href="../payment.php">Оплата</a></li>
             <!--<li><a href="about_shop.php">Про магазин</a></li> -->
 
-            <li><a href="contacts.php">Контакти</a></li>
+            <li><a href="../contacts.php">Контакти</a></li>
             <?php
             if($_SESSION['user']) {
 
-                echo ' <li ><a href = "vendor/logout.php" ><button class="auth_but" > Вихід</button ></a ></li >';
+                echo ' <li ><a href = "../vendor/logout.php" ><button class="auth_but" > Вихід</button ></a ></li >';
 
                 echo '<li class="icon_profile">
-                <a href="profile/profile_main.php"><img src="icons/user.png" alt="user"></a>
+                <a href="../profile/profile_main.php"><img src="../icons/user.png" alt="user"></a>
             </li>';
 
             }
             else{
-                echo ' <li ><a href = "authorization.php" ><button class="auth_but" > Вхід</button ></a ></li >';
+                echo ' <li ><a href = "../authorization.php" ><button class="auth_but" > Вхід</button ></a ></li >';
 
             }
             ?>
-            <li><a href="cart/cart_page.php" id="#get-cart"><img src="cart.svg"></a></li>
+            <li><a href="../cart/cart_page.php" id="#get-cart"><img src="../cart.svg"></a></li>
 
             <li><div class="count-cart">
                     <span class="mini-count"> <?=$_SESSION['cart.qty'] ?? 0 ?></span>
@@ -61,30 +59,13 @@ session_start();
         </ul>
     </nav>
 </header>
-<div class="clear"></div>
-<div class="main">
-    <div class=".nav2">
-        <ul class="f2">
-            <li><a href="category/bakery.php">Круасани та випічка</a> </li>
-            <li><a href="category/desert.php">Десерти</a> </li>
-            <li><a href="category/cake.php"> Торти</a></li>
-            <li><a href="category/otherSweet.php">Інші солодощі та напої</a> </li>
-        </ul>
-    </div>
-    <div class="im">
-        <p><img src="candie.jpeg"></p>
-    </div>
-    <div class="clear"></div>
 
-
-
-</div>
 
 <footer>
 
     <div class="logo-wrapper">
         <div class="footer-logo">
-            <img src="icons/confection_logo.png" alt="logo"/>
+            <img src="../icons/confection_logo.png" alt="logo"/>
         </div>
         <div class="footer-logo-text">
             <p>Sweet Masterpiece</p>
@@ -93,23 +74,23 @@ session_start();
 
     <div class="about-shop">
         <p> <span>SWEET MASTERPIECE</span></p>
-        <a href="about_shop.php"> <p>Про компанію</p></a>
+        <a href="../about_shop.php"> <p>Про компанію</p></a>
         <a href=""> <p>Стати партнером</p></a>
         <a href=""><p>Робота у Sweet Masterpiece</p></a>
         <a href=""> <p>Правова інформація</p></a>
     </div>
     <div class="info-for-seller">
         <p><span>ПОКУПЦЮ</span></p>
-        <p><a href="delivety.php">Доставка та оплата</a></p>
+        <p><a href="../delivety.php">Доставка та оплата</a></p>
         <p><a href="">Обмін та повернення товару</a></p>
         <p><a href="">Гарантія</a></p>
-        <p><a href="question.php">Задайте питання</a></p>
+        <p><a href="../question.php">Задайте питання</a></p>
     </div>
     <div class="contacts">
         <p>
             <span>Контактні данні: </span><br>
-            <img src="icons/phone1.png" alt="phone" /> <span class="icon">+38 066 742 2513</span><br>
-            <img src="icons/email.png" alt="email" /> <span class="icon">grenyk.s@gmail.com</span>
+            <img src="../icons/phone1.png" alt="phone" /> <span class="icon">+38 066 742 2513</span><br>
+            <img src="../icons/email.png" alt="email" /> <span class="icon">grenyk.s@gmail.com</span>
         </p>
         <br/>
         <p>
@@ -124,5 +105,6 @@ session_start();
     </div>
 
 </footer>
+
 </body>
-</html>
+    </html>
